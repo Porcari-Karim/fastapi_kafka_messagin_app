@@ -1,0 +1,1 @@
+# fastapi_kafka_messagin_app
