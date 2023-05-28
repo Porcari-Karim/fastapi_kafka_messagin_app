@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Share</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Register</h1>
+    <form action="login" method="post">
+
+        <label for="e_mail">Email address</label>
+        <input type="text" id="e_mail" name="e_mail" placeholder="Email address" required>
+        
+        <label for="password">Email address</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <!-- Button -->
+        <button type="submit">Submit</button>
+      
+    </form>
+    {% if message %}
+        <p class="alert alert-danger">
+            <a class="close" data-dismiss="alert" href="#">&times;</a>
+            {{message}}
+        </p>
+    {% endif %}
+    </main>
+</body>
+</html>

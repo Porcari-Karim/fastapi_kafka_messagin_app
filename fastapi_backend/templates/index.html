@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Share</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Share</h1>
+        {{ user_data.username }}
+        <h2>Rooms</h2>
+        <ul>
+            {% for room in rooms%}
+                <h3>{{ room.name }}</h3>
+                <a href="/room/{{room.id}}">Join</a>
+            {% endfor %}
+        </ul>
+        <div class="container">
+            <form action="post">
+                <span>Create New Room</span>
+                <input type="text" name="name" id="name">
+                <input type="submit">
+                
+            </form>
+        </div>
+    </main>
+    
+    
+</body>
+</html>
